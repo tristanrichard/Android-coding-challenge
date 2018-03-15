@@ -5,7 +5,7 @@ Din opgave er at lave en lille Android applikation med følgende kravsspecifikat
 - Den lytter efter din stemme
 - Du kan spørge den om verjet lige nu
 - Der skal være mere end én Activity, og brug gerne fragments hvis du synes
-- Hvordan du håndterer stemmegenkendelse er op til dig, du kan fx. bruge [SpeechRecognizer] (https://developer.android.com/reference/android/speech/SpeechRecognizer.html) eller en online service efter eget valg som [Microsoft LUIS] (https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
+- Hvordan du håndterer stemmegenkendelse er op til dig, du kan fx. bruge [SpeechRecognizer](https://developer.android.com/reference/android/speech/SpeechRecognizer.html) eller en online service efter eget valg som [Microsoft LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
 - Brug en vejrservice efter eget valg
 
 ## Hvad er interessant ved opgaven
