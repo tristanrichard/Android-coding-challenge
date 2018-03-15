@@ -14,7 +14,7 @@ Din opgave er at lave en lille Android applikation med følgende kravsspecifikat
 - Din brug af eskterne API'er (og hvad hvis de er nede?)
 - Bruger du nogle andre rammeværker som du har god erfaring med? (fx. Dagger eller Retrofit eller noget helt andet eller slet ikke noget)
 
-Husk at det ikke forventes at alt er perfekt, og at du ved alt. Meningen er at få noget kode fra din hånd som vi kan kigge på sammen.
+Husk at det ikke forventes at alt er perfekt, og at du ved alt. Meningen er at få noget kode fra din hånd som vi kan kigge på sammen og blive kogere på din måde at tænke på.
 
 ## Tid
 Du skal regne med at bruge 4-8 timer på det. Hvis du kommer over 8 timer, så lave bare nogle TODO kommentarer hvor du forklarer dine ideer.
