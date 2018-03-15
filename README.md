@@ -2,7 +2,7 @@
 Ideen med denne opgave er at kunne vurdere hvordan du vil udvikle en praktisk Android applikation. Hvordan bruger du Android SDK? Hvordan bruger du tredjeparts rammeværker? Ideen med denne opgave er altså ikke at vurdere din viden om et eller andet dybt teoretisk som ved fx en reimplementering af HTTP-protokollen, men hvordan du helt praktisk løser en Android opgave.
 
 Din opgave er at lave en lille Android applikation med følgende kravsspecifikation:
-- Den lytter efter din stemme
+- Den lytter efter din stemme (engelsk er fint)
 - På din opfordring kan den fortælle dig hvordan vejret er lige nu
 - Der skal være mere end én Activity, og brug gerne fragments hvis du synes
 - Hvordan du håndterer stemmegenkendelse er op til dig, du kan fx. bruge [SpeechRecognizer](https://developer.android.com/reference/android/speech/SpeechRecognizer.html) eller en online service efter eget valg som [Microsoft LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
