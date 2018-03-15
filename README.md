@@ -9,9 +9,9 @@ Din opgave er at lave en lille Android applikation med følgende kravsspecifikat
 - Brug en vejrservice efter eget valg
 
 ## Hvad er interessant ved opgaven
-- Kodestrukturer: hvordan du bruger 'activities' og 'fragments'. Hvordan bruger du services? Husk småt og genbrugeligt er også let forståeligt.
+- Kodestrukturer: hvordan bruger du 'activities' og 'fragments'. Hvordan bruger du services? Husk småt og genbrugeligt er også let forståeligt.
 - Unit tests?
-- Din brug af eskterne API'er (og hvad hvis det er nede?)
+- Din brug af eskterne API'er (og hvad hvis de er nede?)
 - Bruger du nogle andre rammeværker som du har god erfaring med? (fx. Dagger eller Retrofit eller noget helt andet eller slet ikke noget)
 
 Husk at det ikke forventes at alt er perfekt, og at du ved alt. Meningen er at få noget kode fra din hånd som vi kan kigge på sammen.
