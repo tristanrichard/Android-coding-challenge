@@ -1,20 +1,22 @@
-# Android Coding Challenge
-We want to know how you write **code** - we don't care about coding challenges where you have to reimplement the HTTP protocol by using the bare basics, we want to know how you can use the existing libraries to solve the problems that we have to solve.
+# Android Kode Opgave
+Ideen med denne opgave er at kunne vurdere hvordan du vil udvikle en praktisk Android applikation. Hvordan bruger du Android SDK? Hvordan bruger du tredjeparts rammeværker? Ideen med denne opgave er altså ikke at vurdere din viden om et eller andet dybt teoretisk som fx ved en reimplementering af HTTP-protokollen, men hvordan du helt praktisk løser en Android opgave.
 
-Your task is to create a very small Android application which will listen to a voice of the user and will tell them the current weather information when asked for. It's up to you to decide how exactly you want to approach this challenge - do you want to use the native SpeechRecognizer for voice recognition, use offline voice recognition for keywords (e.g. PocketSphinx) or another online service with conversational capabilities (e.g. api.ai, Microsoft LUIS, etc.). You can also choose whichever weather service you want.
+Din opgave er at lave en lille Android applikation med følgende kravsspecifikation:
+- Den lytter efter din stemme
+- Du kan spørge den om verjet lige nu
+- Der skal være mere end én Activity, og brug gerne fragments hvis du synes
+- Hvordan du håndterer stemmegenkendelse er op til dig, du kan fx. bruge [SpeechRecognizer] (https://developer.android.com/reference/android/speech/SpeechRecognizer.html) eller en online service efter eget valg som [Microsoft LUIS] (https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
+- Brug en vejrservice efter eget valg
 
-## What we'll look at
-- Structure of the code - how you use controllers, services, views. Keep it clean and reusable.
-- Code formatting, included unit and Espresso tests.
-- Using external APIs is cool, but you have to make sure the app will support errors if the API is down.
-- Readme - we don't need documentation, but a small file explaining how to run the project will be useful.
-- Overall user experience in the application.
+## Hvad er interessant ved opgaven
+- Kodestrukturer: hvordan du bruger 'activities' og 'fragments'. Hvordan bruger du services?. Husk småt og genbrugeligt er også let forståeligt.
+- Unit tests?
+- Din brug af eskterne API'er (og hvad hvis det er nede?)
+- Bruger du nogle andre rammeværker? (fx. Dagger eller Retrofit eller noget helt andet eller slet ikke noget)
 
-## Time limit
-It should take you between 4 to 8 hours to finish this task. If it takes you longer, it's okay to leave TODOs in the code, just provide an explanation what you would still finish there.
-
-After sending the challenge we'll wait 2 weeks to hear back from you. Feel free to ask us for any clarification if you need it.
+## Tid
+Du skal regne med at bruge 4-8 timer på det. Hvis du kommer over 8 timer, så lave bare nogle TODO kommentarer hvor du forklarer dine ideer.
 
 ## Process
-When you're ready, please fork this repository and start writing code in your fork. You'll get extra points for committing often in small chunks, so we'll see the process of how you created the application.
+Fork dette repo, og tilføj koden hertil. Tilføj også en lille README med evt. nødvendig info.
 
