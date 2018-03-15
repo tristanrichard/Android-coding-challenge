@@ -1,5 +1,5 @@
 # Android Kode Opgave
-Ideen med denne opgave er at kunne vurdere hvordan du vil udvikle en praktisk Android applikation. Hvordan bruger du Android SDK? Hvordan bruger du tredjeparts rammeværker? Ideen med denne opgave er altså ikke at vurdere din viden om et eller andet dybt teoretisk som fx ved en reimplementering af HTTP-protokollen, men hvordan du helt praktisk løser en Android opgave.
+Ideen med denne opgave er at kunne vurdere hvordan du vil udvikle en praktisk Android applikation. Hvordan bruger du Android SDK? Hvordan bruger du tredjeparts rammeværker? Ideen med denne opgave er altså ikke at vurdere din viden om et eller andet dybt teoretisk som ved fx en reimplementering af HTTP-protokollen, men hvordan du helt praktisk løser en Android opgave.
 
 Din opgave er at lave en lille Android applikation med følgende kravsspecifikation:
 - Den lytter efter din stemme
