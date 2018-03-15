@@ -12,7 +12,8 @@ Din opgave er at lave en lille Android applikation med følgende kravsspecifikat
 - Kodestrukturer: hvordan du bruger 'activities' og 'fragments'. Hvordan bruger du services? Husk småt og genbrugeligt er også let forståeligt.
 - Unit tests?
 - Din brug af eskterne API'er (og hvad hvis det er nede?)
-- Bruger du nogle andre rammeværker? (fx. Dagger eller Retrofit eller noget helt andet eller slet ikke noget)
+- Bruger du nogle andre rammeværker som du har god erfaring med? (fx. Dagger eller Retrofit eller noget helt andet eller slet ikke noget)
+- Husk at det ikke forventes at alt er perfekt.
 
 ## Tid
 Du skal regne med at bruge 4-8 timer på det. Hvis du kommer over 8 timer, så lave bare nogle TODO kommentarer hvor du forklarer dine ideer.
