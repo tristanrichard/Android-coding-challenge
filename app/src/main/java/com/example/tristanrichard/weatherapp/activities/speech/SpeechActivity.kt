@@ -6,6 +6,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.RecognizerIntent
+import android.view.View
 import com.example.tristanrichard.weatherapp.R
 import com.example.tristanrichard.weatherapp.activities.extensions.getCapitalisedWordsInString
 import com.example.tristanrichard.weatherapp.activities.speech.adapter.PlaceAdapter
@@ -24,7 +25,7 @@ import java.util.concurrent.TimeUnit
 
 class SpeechActivity : AppCompatActivity() {
 
-    var predictions: List<Prediction> = ArrayList()
+    var predictions: List<Prediction> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +55,10 @@ class SpeechActivity : AppCompatActivity() {
                 PlacesService.searchGooglePlaceWith(word)
                         .observeOn(AndroidSchedulers.mainThread())
                         .doOnSubscribe {
-                            // TODO: Show Progress
+                            progressBar?.visibility = View.VISIBLE
+                        }
+                        .doFinally {
+                            progressBar?.visibility = View.INVISIBLE
                         }
                         .subscribe({
                             handleGooglePlaceResult(it)

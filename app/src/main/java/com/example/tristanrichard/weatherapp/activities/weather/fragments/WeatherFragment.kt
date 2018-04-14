@@ -27,7 +27,10 @@ class WeatherFragment : Fragment() {
             WeatherService.getWeatherForCityWithName(it)
                     .observeOn(AndroidSchedulers.mainThread())
                     .doOnSubscribe {
-                        // TODO: Show Progress
+                        progressBar?.visibility = View.VISIBLE
+                    }
+                    .doFinally {
+                        progressBar?.visibility = View.INVISIBLE
                     }
                     .subscribe({
                         setupData(it)
