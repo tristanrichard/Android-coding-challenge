@@ -3,6 +3,8 @@ package com.example.tristanrichard.weatherapp.activities.weather
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.tristanrichard.weatherapp.R
+import com.example.tristanrichard.weatherapp.activities.weather.adapter.WeatherViewPagerAdapter
+import kotlinx.android.synthetic.main.activity_weather.*
 
 class WeatherActivity : AppCompatActivity() {
 
@@ -12,6 +14,8 @@ class WeatherActivity : AppCompatActivity() {
 
         val city = intent.getStringExtra(SEARCH_KEY)
 
+        val viewPagerAdapter = WeatherViewPagerAdapter(this, city, supportFragmentManager)
+        weatherViewPager.adapter = viewPagerAdapter
 
     }
 

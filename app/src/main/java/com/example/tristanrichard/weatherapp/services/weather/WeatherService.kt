@@ -1,6 +1,14 @@
 package com.example.tristanrichard.weatherapp.services.weather
 
+import com.example.tristanrichard.weatherapp.enums.WeatherUnit
+import com.example.tristanrichard.weatherapp.models.weather.ForecastResult
+import com.example.tristanrichard.weatherapp.models.weather.WeatherResult
 import com.example.tristanrichard.weatherapp.services.NetworkGenerator
+import com.example.tristanrichard.weatherapp.services.weather.api.ForecastApi
+import com.example.tristanrichard.weatherapp.services.weather.api.WeatherApi
+import io.reactivex.Observable
+import io.reactivex.schedulers.Schedulers
+import java.util.*
 
 object WeatherService {
 
@@ -13,5 +21,21 @@ object WeatherService {
             instance = NetworkGenerator()
         }
         return instance!!.getretrofit(API_URL).create(serviceClass)
+    }
+
+    fun getWeatherForCityWithName(name: String): Observable<WeatherResult> {
+        return createService(WeatherApi::class.java).getWeatherForCityWithName(name, WeatherUnit.Metric.name.toLowerCase(), Locale.getDefault().country)
+                .subscribeOn(Schedulers.io())
+                .doOnNext {
+                    // TODO: Store search result to minimise network requests
+                }
+    }
+
+    fun getForecastForCityWithName(name: String): Observable<ForecastResult> {
+        return createService(ForecastApi::class.java).getForecastForCityWithName(name, WeatherUnit.Metric.name.toLowerCase(), Locale.getDefault().country)
+                .subscribeOn(Schedulers.io())
+                .doOnNext {
+                    // TODO: Store search result to minimise network requests
+                }
     }
 }
