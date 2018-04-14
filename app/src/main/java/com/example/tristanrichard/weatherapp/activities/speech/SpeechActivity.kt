@@ -39,7 +39,7 @@ class SpeechActivity : AppCompatActivity() {
                 }, {
                     when (it) {
                         is ActivityNotFoundException -> {
-                            // TODO Notify user that speech service is unavailable
+                            // TODO Notify user that speech service is unavailable and provide edittext instead
                         }
                         else -> {
                             // TODO Notify user that an error occurred

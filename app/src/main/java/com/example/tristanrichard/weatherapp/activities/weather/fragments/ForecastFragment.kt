@@ -35,7 +35,7 @@ class ForecastFragment : Fragment() {
                     .subscribe({
                         showForecast(it.list)
                     }, {
-                        // TODO: Handle errors
+                        // TODO: Handle errors like (no internet, 4xx like city not found, 5xx like server unavailable)
                         Log.e(this@ForecastFragment.javaClass.simpleName, it.message)
                     })
         }

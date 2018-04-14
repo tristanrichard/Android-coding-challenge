@@ -36,7 +36,7 @@ class WeatherFragment : Fragment() {
                         setupData(it)
 
                     }, {
-                        // TODO: Handle errors
+                        // TODO: Handle errors like (no internet, 4xx like city not found, 5xx like server unavailable)
                         Log.e(this@WeatherFragment.javaClass.simpleName, it.message)
                     })
         }
