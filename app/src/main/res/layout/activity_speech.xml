@@ -12,19 +12,27 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:text="@string/speech_activity_title"
         android:layout_marginTop="100dp"
-        android:textColor="@android:color/white"
-        android:textSize="26dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ListView
+        android:id="@+id/placeResultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtSpeechInput"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="12dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintVertical_bias="1"
@@ -40,13 +48,6 @@
             android:background="@null"
             android:src="@drawable/ico_mic" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            android:textStyle="normal" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

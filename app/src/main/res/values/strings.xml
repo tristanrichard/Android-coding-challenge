@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="speech_activity_title">Type the microphone and ask for the weather!</string>
 </resources>

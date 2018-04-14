@@ -9,5 +9,13 @@ class WeatherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
+
+        val city = intent.getStringExtra(SEARCH_KEY)
+
+
+    }
+
+    companion object {
+        const val SEARCH_KEY = "city_description"
     }
 }

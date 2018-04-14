@@ -1,6 +1,10 @@
 package com.example.tristanrichard.weatherapp.services.places
 
+import com.example.tristanrichard.weatherapp.models.googleplace.PlaceResult
 import com.example.tristanrichard.weatherapp.services.NetworkGenerator
+import com.example.tristanrichard.weatherapp.services.places.api.AutoCompleteApi
+import io.reactivex.Observable
+import io.reactivex.schedulers.Schedulers
 
 object PlacesService {
 
@@ -15,4 +19,12 @@ object PlacesService {
         return instance!!.getretrofit(API_URL).create(serviceClass)
     }
 
+
+    fun searchGooglePlaceWith(name: String): Observable<PlaceResult> {
+        return createService(AutoCompleteApi::class.java).searchForMatchingCities(name)
+                .subscribeOn(Schedulers.io())
+                .doOnNext {
+                    // TODO: Store search result to minimise network requests
+                }
+    }
 }
