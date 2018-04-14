@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.davidmoten:rxjava2-extras:0.1.20@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.davidmoten/rxjava2-extras/0.1.20/4f4a377f2a26873dd6682d2db3de3b5dc7c8470e/rxjava2-extras-0.1.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.davidmoten/rxjava2-extras/0.1.20/10b187a2c3df838abb5e500db4dcb670d345cb07/rxjava2-extras-0.1.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
