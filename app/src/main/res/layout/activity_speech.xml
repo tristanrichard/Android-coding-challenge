@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="12dp"
     tools:context=".activities.speech.SpeechActivity">
 
     <TextView
@@ -23,6 +24,7 @@
 
     <ListView
         android:id="@+id/placeResultListView"
+        android:layout_marginTop="24dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/txtSpeechInput"/>

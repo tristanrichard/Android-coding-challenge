@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+
     <string name="speech_activity_title">Type the microphone and ask for the weather!</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="weather_activity_view_pager_weather">Current</string>
+    <string name="weather_activity_view_pager_forecast">Forecast</string>
+
 </resources>

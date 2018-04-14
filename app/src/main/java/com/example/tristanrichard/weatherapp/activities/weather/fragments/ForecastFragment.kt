@@ -8,8 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.tristanrichard.weatherapp.R
+import com.example.tristanrichard.weatherapp.activities.weather.adapter.ForecastAdapter
+import com.example.tristanrichard.weatherapp.models.weather.WeatherResult
 import com.example.tristanrichard.weatherapp.services.weather.WeatherService
 import io.reactivex.android.schedulers.AndroidSchedulers
+import kotlinx.android.synthetic.main.fragment_forecast.*
 
 class ForecastFragment : Fragment() {
     private var city: String? = null
@@ -27,8 +30,7 @@ class ForecastFragment : Fragment() {
                         // TODO: Show Progress
                     }
                     .subscribe({
-                        // TODO: Show result
-                        Log.i(this@ForecastFragment.javaClass.simpleName, it.list.size.toString())
+                        showForecast(it.list)
                     }, {
                         // TODO: Handle errors
                         Log.e(this@ForecastFragment.javaClass.simpleName, it.message)
@@ -42,6 +44,10 @@ class ForecastFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_forecast, container, false)
     }
 
+    private fun showForecast(result: List<WeatherResult>) {
+        val adapter = ForecastAdapter(context, result, R.layout.fragment_forecast_list_item)
+        forecastListView.adapter = adapter
+    }
 
     companion object {
 

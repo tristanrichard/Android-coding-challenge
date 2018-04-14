@@ -7,5 +7,6 @@ class WeatherResult(
         val visibility: Int,
         val wind: Wind,
         val name: String,
-        val sys: Sys
+        val sys: Sys,
+        val dt_txt: String
 )

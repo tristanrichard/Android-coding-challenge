@@ -8,8 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.tristanrichard.weatherapp.R
+import com.example.tristanrichard.weatherapp.models.weather.WeatherResult
 import com.example.tristanrichard.weatherapp.services.weather.WeatherService
 import io.reactivex.android.schedulers.AndroidSchedulers
+import kotlinx.android.synthetic.main.fragment_weather.*
 
 
 class WeatherFragment : Fragment() {
@@ -28,8 +30,8 @@ class WeatherFragment : Fragment() {
                         // TODO: Show Progress
                     }
                     .subscribe({
-                        // TODO: Show result
-                        Log.i(this@WeatherFragment.javaClass.simpleName, it.name)
+                        setupData(it)
+
                     }, {
                         // TODO: Handle errors
                         Log.e(this@WeatherFragment.javaClass.simpleName, it.message)
@@ -44,6 +46,15 @@ class WeatherFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_weather, container, false)
     }
 
+    fun setupData(result: WeatherResult) {
+
+        cityPlaceHolder?.text = city
+        tempPlaceHolder?.text = "${result.main.temp} C" // TODO: Locolize
+        windPlaceholder?.text = "${result.wind.speed} m/s"
+        minTempPlaceholder?.text = "min ${result.main.temp_min} C"
+        maxTempPLaceholder?.text = "max ${result.main.temp_max} C"
+
+    }
 
     companion object {
 

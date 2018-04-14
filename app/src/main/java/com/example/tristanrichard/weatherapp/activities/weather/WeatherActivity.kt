@@ -15,7 +15,11 @@ class WeatherActivity : AppCompatActivity() {
         val city = intent.getStringExtra(SEARCH_KEY)
 
         val viewPagerAdapter = WeatherViewPagerAdapter(this, city, supportFragmentManager)
-        weatherViewPager.adapter = viewPagerAdapter
+        weatherViewPager?.let {
+            it.adapter = viewPagerAdapter
+            fragmentTabs?.setupWithViewPager(it)
+        }
+
 
     }
 
